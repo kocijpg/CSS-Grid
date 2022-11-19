@@ -1,0 +1,134 @@
+-HTML BÖLÜMÜ-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flex-Grid</title>
+</head>
+<body>
+    <div class="container">
+        <div class="birinci">
+            <div class="logo">LOGO</div>
+            <div class="menu">MENU</div>
+        </div>
+        <div class="ikinci">
+            <div class="banner">BANNER</div>
+        </div>
+        <div class="ucuncu">
+            <div class="bolum1">BOLUM 1</div>
+            <div class="bolum2">BOLUM 2</div>
+            <div class="bolum3">BOLUM 3</div>
+        </div>
+        <div class="dorduncu">
+            <div class="bolum4">BOLUM 4</div>
+            <div class="bolum5">BOLUM 5</div>
+            <div class="bolum6">BOLUM 6</div>
+        </div>
+        <div class="besinci">
+            <div class="footer">FOOTER</div>
+        </div>
+        
+    </div>
+</html>
+
+
+
+
+
+
+
+
+
+-CSS BÖLÜMÜ-
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container{
+  text-align: center;
+  padding: 20px;
+  /*border: 1px solid #000;*/
+  display: grid;
+  /*grid-row-gap: 1px;*/
+}
+
+/*LOGO VE MENU*/
+.container .birinci {
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: 150px auto;
+}
+.logo{
+  background-color:cornflowerblue;
+}
+.menu{
+  background-color:cadetblue;
+}
+
+/*BANNER*/
+.container .ikinci {
+  text;
+  display: grid;
+  grid-template-rows: 120px;
+  grid-template-columns: auto ;
+}
+.banner{
+  background-color:crimson ;
+}
+
+/*BOLUM 1-2-3*/
+.container .ucuncu{
+  background-color: darkkhaki;
+
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bolum1{
+  border-right: 2px solid #454545;
+}
+.bolum2{
+  border-right: 2px solid #454545;
+}
+.bolum3{
+  
+}
+
+/*BOLUM 4-5-6*/
+.container .dorduncu{
+  background-color:firebrick;
+
+  display: grid;
+  grid-template-rows: 50px;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.bolum4{
+  border-right: 2px solid #454545;
+}
+.bolum5{
+  border-right: 2px solid #454545;
+}
+.bolum6{
+  
+}
+
+/*FOOTER*/
+.container .besinci{
+  background-color:firebrick;
+
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: auto;
+}
+.footer{
+  background-color:darkorchid;
+} 
